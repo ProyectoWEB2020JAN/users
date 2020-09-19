@@ -1,0 +1,21 @@
+<section>
+    <div class="contenedor-form bg-dark">
+        <div class="toggle">
+            <span><a href="./register">Crea Tu Cuenta</a></span>
+        </div>
+        <div class="formulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="/logearse" method="POST">
+                <input type="email" placeholder="correo" required name="emailLogin">
+                <input type="password" placeholder="contraseña" required name="contraseñaLogin">
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </div>
+        <div class="reset-password">
+            <a href="#">Olvide mi contraseña</a>
+        </div>
+        {{> home}}
+    </div>
+
+
+</section>

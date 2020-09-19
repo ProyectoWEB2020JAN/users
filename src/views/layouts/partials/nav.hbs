@@ -1,0 +1,44 @@
+<div class="fixed-top">
+    <div class="content-center ">
+        <h1 style="" class="text-white">Pizzarela</h1>
+        <img src="./img/pizza.png" style="display: inline-block;" alt="Logo" class="logo-nav" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <div id="administrar"></div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/" id="index">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./menu" id="menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nosotros" id="nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./sucursales" id="sucursales">Sucursales</a>
+                </li>
+                {{#if esencial.usuarioActivo}}
+                <li class="nav-item">
+                    <a class="nav-link" href="./listaPedidos" id="sucursales">Administrar Cuenta</a>
+                </li>
+                <li class="nav-item">
+                    <form action="/cerrarSesion" method="POST">
+                        <input class="btn btn-light nav-link ml-5" type="submit" value="Cerrar Sesion">
+                    </form>
+                </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="./login" id="sucursales">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./register" id="sucursales">Registrate</a>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+    </nav>
+</div>

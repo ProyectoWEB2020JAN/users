@@ -1,0 +1,17 @@
+<section>
+    <div class="contenedor-form bg-dark">
+        <div class="toggle">
+            <span><a href="/login">Iniciar sesion</a></span>
+        </div>
+        <div class="formulario">
+            <h2>Crea Tu Cuenta</h2>
+            <form action="/registrarse" method="POST">
+                <input type="text" placeholder="Nombre Completo" required name="nombre">
+                <input minlength="6" type="password" placeholder="Contraseña minimo 6 caracteres" required name="password">
+                <input type="email" placeholder="Correo Electronico" required name="correo">
+                <input type="number" placeholder="Celular" required name="celular">
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+        {{> home}}
+</section>

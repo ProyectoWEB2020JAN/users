@@ -1,0 +1,153 @@
+{{> nav}}
+<div class="contenedor-init">
+	<div class="row">
+		<div class="col-8">
+			<section class="wrapper">
+				<div id="lista-productos" class="container-fostrap">
+					<div>
+						<h1 class="heading">
+							Porciones de pizza
+						</h1>
+					</div>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								{{#each esencial.productos.Porciones}}
+								<div class="col-xs-12 col-sm-4">
+									<div class="card mb-2">
+										<a class="img-card">
+											<img
+												src="https://thumbs.dreamstime.com/b/rebanada-de-pizza-hawaiana-48275315.jpg" />
+										</a>
+										<div class="card-content-custom">
+											<h4 class="card-title">
+												{{nombre}}
+											</h4>
+											<p class="">
+												{{descripcion}}
+											</p>
+											<p class="bold"> {{precio}}</p>
+										</div>
+										<div class="card-read-more">
+											<a data-id="1" class="btn btn-link btn-block agregar-carrito ">
+												Agregar producto
+											</a>
+										</div>
+									</div>
+								</div>
+								{{/each}}
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<h1 class="heading">
+							Pizzas enteras
+						</h1>
+					</div>
+					<div class="content">
+						<div class="container">
+							<div class="row" style="width: 50vw;">
+								{{#each esencial.productos.Completas}}
+								<div class="col-xs-12 col-sm-4">
+									<div class="card mb-2">
+										<a class="img-card">
+											<img
+												src="https://thumbs.dreamstime.com/b/rebanada-de-pizza-hawaiana-48275315.jpg" />
+										</a>
+										<div class="card-content-custom">
+											<h4 class="card-title">
+												{{nombre}}
+											</h4>
+											<p class="">
+												{{descripcion}}
+											</p>
+											<p class="bold"> {{precio}}</p>
+										</div>
+										<div class="card-read-more">
+											<a data-id="1" class="btn btn-link btn-block agregar-carrito ">
+												Agregar producto
+											</a>
+										</div>
+									</div>
+								</div>
+								{{/each}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<div class="col-4 fixed">
+			<section class="wrapper" style="display: flex;">
+				<div class="container-fostrap">
+					<h1 class="heading">
+						Carrito de compras
+					</h1>
+					<div class="card fixed">
+						<div id="carrito" class="card-body">
+							<table id="lista-carrito" class="table">
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+							<button id="vaciar-carrito" type="button" class="btn btn-warning">Vaciar carrito</button>
+							<button id="procesar-pedido" type="button" data-toggle="modal" data-target="#exampleModal"
+								class="btn btn-success">Procesar
+								pedido</button>
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+								aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">Resumen de pedido</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<table id="resumen-pedido" class="table">
+												<thead>
+													<tr>
+														<th scope="col">Producto</th>
+														<th scope="col">Precio individual</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+													</tr>
+												</tbody>
+											</table>
+
+											<div class="row">
+												<h4>TOTAL: </h4>
+												<spam id="total"></spam>
+											</div>
+
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal">Cancelar</button>
+											{{#if esencial.usuarioActivo}}
+											<button type="button" id="pedido" class="btn btn-primary">Aceptar
+												pedido</button>
+											{{else}}
+											<button type="button" class="btn btn-danger" disabled>INICIA
+												SESION PARA PODER COMPRAR</button>
+											{{/if}}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+{{> footer}}

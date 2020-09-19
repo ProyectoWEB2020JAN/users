@@ -1,0 +1,59 @@
+{{> nav-admin}}
+<div class="content-admin">
+    <div class="dashboard__item">
+        {{> subnav}}
+        <div class="card bg-dark text-white">
+            <strong class="p-5" style=" font-size:5vh">PENDIENTES:</strong>
+            <table class="table table-dark" style="font-size:large">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Usuario</th>
+                        <th scope="col">Ver pedido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>juan de las casa</td>
+                        <td><button type="button" data-toggle="modal" data-target="#exampleModal"
+                                class="btn btn-success">Ver
+                                pedido</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Pedido Completo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h3>Productos</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Pizza pequeña
+                            <a href="#" class="badge badge-primary badge-pill">Eiminar</a>
+                        </li>
+                    </ul>
+
+                    <h5 class="mt-5">Total: <span>$0000 </span></h5>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Aceptar</button>
+                    <button type="button" class="btn btn-danger">Rechazar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer-admin}}

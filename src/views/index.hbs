@@ -1,0 +1,124 @@
+{{> nav}}
+<div class="contenedor-init ">
+  <div class="container-fluid">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner carousel-height">
+        <div class="carousel-item active">
+          <img src="https://cdn.pixabay.com/photo/2017/05/05/16/42/session-2287673_960_720.jpg" class="d-block w-100"
+            alt="imagen1" />
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.pixabay.com/photo/2014/04/05/11/27/buffet-315691_960_720.jpg" class="d-block w-100"
+            alt="imagen2" />
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="content-row">
+      <div class="content-col">
+        <img class="content-img" src="/img/undraw_pizza.png" />
+      </div>
+      <div class="content-col">
+        <button class="btn btn-primary"><a href="http://localhost:4000/menu" class="btn-primary">Conoce nuestro
+            menu</a></button>
+
+      </div>
+    </div>
+    <h3 class="text-dark">Algunos de nuestros productos.</h3>
+
+
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://thumbs.dreamstime.com/b/rebanada-de-pizza-hawaiana-48275315.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Hawaiana</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://images.rappi.com/products/2091396935-1579800747450.png"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Criolla</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top"
+                src="https://static.wixstatic.com/media/7f727a_33c7c467ed174ab3a7e62d301be5e3a9~mv2.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Ranchera</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top"
+                src="https://static.wixstatic.com/media/7f727a_33c7c467ed174ab3a7e62d301be5e3a9~mv2.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Ranchera</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top"
+                src="https://www.gastroactitud.com/wp-content/uploads/2017/07/140311134629-pizza.jpg"
+                alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Pizza Argentina</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+{{> footer}}

@@ -1,0 +1,22 @@
+{
+  "name": "nodeproyect",
+  "version": "0.0.1",
+  "description": "proyecto basdo en el proyecto web de pizzarela",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "author": "Juan Camilo Lozano Claros",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.5",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "firebase": "^7.21.0",
+    "node-cron": "^2.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
